@@ -125,8 +125,16 @@ Question: What are the most in-demand skills for data analysts?
 - Why? Retrives top 5 skills with the highest demand in the job market,
 which can help data analysts understand which skills are most valuable for their career development and job prospects.providing insight into the most valuable skills for job seekers.
 
+Top 5 in demanded skills for a data analyst
+| skills   |   demand_count |
+|:---------|---------------:|
+| sql      |          92628 |
+| excel    |          67031 |
+| python   |          57326 |
+| tableau  |          46554 |
+| power bi |          39468 |
+
 ```sql
--- top 5 in demand skills for a data analyst
 SELECT 
         Skills,
         COUNT(skills_job_dim.job_id) AS demand_count
@@ -140,8 +148,19 @@ GROUP BY
 ORDER BY 
         demand_count DESC
 LIMIT 5;
+ ```
+
  
--- top 5 in demand skills for a business analyst
+Top 5 in demanded skills for a business analyst
+| skills   |   demand_count |
+|:---------|---------------:|
+| sql      |          17372 |
+| excel    |          17134 |
+| tableau  |           9324 |
+| power bi |           9251 |
+| python   |           8097 |
+
+```sql
 SELECT 
         Skills,
         COUNT(skills_job_dim.job_id) AS demand_count
@@ -156,14 +175,28 @@ ORDER BY
         demand_count DESC
 LIMIT 5;
 ```
+
 ### 4. Skills associated with higher salaries
 Answer: What are the top skills based on salary?
 - lokk at the average salary associated with each skill for Data Analyst
 - Focus on roles with specific salaries, regardless of location
 - Why? It reveal hoe different skills impact salary levels for Data Analysis and helps identify the most financially rewarding skills to acquire or improve.
 
+Top paying skills for data analyst
+| skills    | avg_salary   |
+|:----------|:-------------|
+| svn       | $400,000     |
+| solidity  | $179,000     |
+| couchbase | $160,515     |
+| datarobot | $155,486     |
+| golang    | $155,000     |
+| mxnet     | $149,000     |
+| dplyr     | $147,633     |
+| vmware    | $147,500     |
+| terraform | $146,734     |
+| twilio    | $138,500     |
+
 ```sql
---top paying skills for data analyst
 SELECT 
     Skills,
     ROUND(AVG(salary_year_avg), 0) AS avg_salary
@@ -178,8 +211,22 @@ GROUP BY
 ORDER BY 
         avg_salary DESC
 LIMIT 25;
+```
 
---top paying skills for business analyst
+Top paying skills for business analyst
+| skills   | avg_salary   |
+|:---------|:-------------|
+| chef     | $220,000     |
+| numpy    | $157,500     |
+| ruby     | $150,000     |
+| hadoop   | $139,201     |
+| julia    | $136,100     |
+| airflow  | $135,410     |
+| phoenix  | $135,248     |
+| electron | $131,000     |
+| c        | $123,329     |
+| pytorch  | $120,333     |
+```sql
 SELECT 
     Skills,
     ROUND(AVG(salary_year_avg), 0) AS avg_salary
@@ -201,6 +248,18 @@ What are the most optimal skills to learn (Aka it's in high demand and high-payi
 - Concentrates on remote positions for specific salaries
 - Why? targets skills that offer job security (high demand) and financial benefits (hig salaries), offering strategic insight for career development in data analysis.
 
+Most optimal skills for both roles 
+| skills     |   demand_count | avg_salary   |
+|:-----------|---------------:|:-------------|
+| sql        |           3083 | $95,292      |
+| excel      |           2143 | $87,212      |
+| python     |           1840 | $104,277     |
+| tableau    |           1659 | $98,794      |
+| r          |           1073 | $105,969     |
+| power bi   |           1044 | $92,059      |
+| word       |            527 | $87,075      |
+| powerpoint |            524 | $88,182      |
+| sas        |            500 | $100,308     |
 ```sql
 WITH skills_demand AS (
     SELECT 
