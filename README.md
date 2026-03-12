@@ -65,7 +65,7 @@ SELECT *
 FROM company_dim
 LIMIT 10;
 ```
-![Top Paying Roles](SQL_Project_Data_jobs\queries\assets\top_paying_jobs.png)
+![Top Paying Roles](queries\assets\top_paying_jobs.png)
 
 ### 2. Skills required for these top-paying jobs.
 
