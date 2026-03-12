@@ -305,25 +305,24 @@ LIMIT 10;
 ```
 
 # What I learned
+Throught this project I have brushed up my skills on SQL and also learned to use some new tools such as Git and Github.
 
-
-# Conclusions
-Insight 1: The "Universal Language" of Data
+# Conclusions / Insight
+## Insight 1: The "Universal Language" of Data
 Looking at both your DA and BA demand charts, SQL and Excel are the undisputed kings.
 
 The Data: SQL had over 92,000 mentions for Data Analysts and 17,000 for Business Analysts.
 
 HR Interpretation: These aren't just "skills"; they are "entry requirements." If you don't have these, you aren't even on the radar. However, because everyone has them, they don't necessarily drive the highest salaries—they just get you the interview.
 
-Insight 2: The High-Demand vs. High-Pay Paradox
+## Insight 2: The High-Demand vs. High-Pay Paradox
 There is a fascinating gap between what is popular and what is lucrative.
 
 The Data: While Excel is in high demand, it doesn't appear on the "Top Paying" lists. Instead, we see niche tools like Solidity (Web3), Golang, and Couchbase for DAs, or Chef and Hadoop for BAs, commanding salaries between $130k and $400k.
 
 HR Interpretation: High pay lives in Specialization. The market pays a premium for "rare" skills that are difficult to master or essential for specific high-growth industries (like Blockchain or Cloud Infrastructure).
 
-Insight 3: The "Sweet Spot" (The Optimal Skills)
-Your optima_skills.csv is the most valuable chart for a career-changer.
+## Insight 3: The "Sweet Spot" (The Optimal Skills)
 
 The Data: Python and Tableau show up with a perfect balance. Python has high demand (1,840) and a high average salary ($104,277).
 
