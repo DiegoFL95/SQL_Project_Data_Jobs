@@ -75,6 +75,24 @@ Question: What skills are required for the top-payinbg jobs?
 - Add the specific skills required for these roles
 - Why? It provides a detailed look at which high-paying jobs demand certain skills, helping job seekers understand which skills to develop that align with top salaries
 
+Top demanded skills for Data Analyst
+| skills   |   demand_count |
+|:---------|---------------:|
+| sql      |          92628 |
+| excel    |          67031 |
+| python   |          57326 |
+| tableau  |          46554 |
+| power bi |          39468 |
+
+Top demanded skills for Business Analyst
+| skills   |   demand_count |
+|:---------|---------------:|
+| sql      |          17372 |
+| excel    |          17134 |
+| tableau  |           9324 |
+| power bi |           9251 |
+| python   |           8097 |
+
 ```sql
 WITH top_paying_jobs AS (
     SELECT
