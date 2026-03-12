@@ -1,8 +1,8 @@
 /* 
-Qestion to answer: What are the top-paying data analyst and business analyst jobs?
+Question to answer: What are the top-paying data analyst and business analyst jobs?
 -Identify the top 10 highest-paying data analyst and business analyst that are remote
 -Focus on job postings with specific salaries ignore NULL values
--why? Highlight the top-payin opportunities for Data Analyst and BA, ofering insight
+-why? Highlight the top-payin opportunities for Data Analyst and BA, offering insight
 */
 
 SELECT
