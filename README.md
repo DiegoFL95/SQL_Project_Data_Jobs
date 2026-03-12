@@ -32,12 +32,11 @@ For the dive in the database containing our data we used several tools:
 
 # The Analysis
 ### 1. Top Paying Data Analyst and Business Analyst Jobs.
-INSERT THE EXPLANATION OF WHAT THE QUERIE DOES
 
 Question to answer: What are the top-paying data analyst and business analyst jobs?
 - Identify the top 10 highest-paying data analyst and business analyst that are remote
 - Focus on job postings with specific salaries ignore NULL values
-- why? Highlight the top-payin opportunities for Data Analyst and BA, offering insight
+- why? Highlight the top-payin opportunities for Data Analyst and BA
 
 ```sql
 SELECT
@@ -66,6 +65,8 @@ SELECT *
 FROM company_dim
 LIMIT 10;
 ```
+![Top Paying Roles](queries\assets\top_paying_jobs.png)
+
 ### 2. Skills required for these top-paying jobs.
 
 Question: What skills are required for the top-payinbg jobs?
